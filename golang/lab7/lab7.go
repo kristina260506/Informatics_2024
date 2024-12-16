@@ -44,8 +44,9 @@ product2.changeData("Premium T-shirt", 1000.0, "A high-quality cotton T-shirt.")
 	}
 	fmt.Printf("Цена корзины до скидки: %.2f $\n\n", calculateDiscount(listOfProduct))
 
-listOfProduct[0].ApplyDiscount(10)
-listOfProduct[1].ApplyDiscount(5)
+product1.applyDiscount(10)
+product2.applyDiscount(20)
+product3.applyDiscount(15)
 
 	fmt. Println("Товар-----------Цена")
 	for _, product := range listOfProduct {
