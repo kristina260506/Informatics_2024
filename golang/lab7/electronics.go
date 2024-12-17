@@ -33,7 +33,7 @@ func (e *Electronics) changeData(name string, price float64, description string)
 }
 
 func (e *Electronics) getData() {
-	fmt.Printf("name: %s\nmodel: %s\nprice: %.2f\ndescription: %s\n\n", e.name, e.electronics, e.price, e.description)
+	fmt.Printf("name: %s\nmodel: %s\nprice: %.2f\ndescription: %s\n\n", e.name, e.model, e.price, e.description)
 }
 
 func (e *Electronics) applyDiscount(perDiscount float64) {
