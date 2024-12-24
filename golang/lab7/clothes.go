@@ -14,28 +14,28 @@ func NewClothes(name string, brand string, price float64, description string) *C
 	return clothes
 }
 
-func (c *Clothes) getName() string {
+func (c *Clothes) GetName() string {
 	return c.name
 }
 
-func (c *Clothes) setPrice(newPrice float64) {
+func (c *Clothes) SetPrice(newPrice float64) {
 	c.price = newPrice
 }
 
-func (c *Clothes) getPrice() float64 {
+func (c *Clothes) GetPrice() float64 {
 	return c.price
 }
 
-func (c *Clothes) changeData(name string, price float64, description string) {
+func (c *Clothes) ChangeData(name string, price float64, description string) {
 	c.name = name
 	c.price = price
 	c.description = description
 }
 
-func (c *Clothes) getData() {
+func (c *Clothes) GetData() {
 	fmt.Printf("name: %s\nbrand: %s\nprice: %.2f\ndescription: %s\n\n", c.name, c.brand, c.price, c.description)
 }
 
-func (c *Clothes) applyDiscount(perDiscount float64) {
+func (c *Clothes) ApplyDiscount(perDiscount float64) {
 	c.price = c.price * (1 - (perDiscount / 100))
 }
